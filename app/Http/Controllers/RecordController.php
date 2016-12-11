@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\records;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 class RecordController extends Controller
 {
     /**
@@ -13,7 +15,7 @@ class RecordController extends Controller
      */
     public function index()
     {
-        //
+        return view('records.index');
     }
 
     /**
