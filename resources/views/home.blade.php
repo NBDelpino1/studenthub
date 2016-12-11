@@ -13,5 +13,8 @@
             </div>
         </div>
     </div>
+
+    {{--<p><a class="btn btn-primary btn-lg" href="{{route('tasks.index')}}" role="button"><span class="glyphicon glyphicon-plus-sign"></span>Attendance</a></p>--}}
+
 </div>
 @endsection
