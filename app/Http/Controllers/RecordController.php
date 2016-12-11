@@ -25,7 +25,7 @@ class RecordController extends Controller
      */
     public function create()
     {
-        //
+        return view('records.create');
     }
 
     /**
@@ -36,7 +36,7 @@ class RecordController extends Controller
      */
     public function store(Request $request)
     {
-        //
+//        return response()->redirectTo(route('records.index'));
     }
 
     /**
@@ -47,7 +47,7 @@ class RecordController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('records.show');
     }
 
     /**
