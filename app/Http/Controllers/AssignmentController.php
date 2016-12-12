@@ -23,7 +23,7 @@ class AssignmentController extends Controller
      */
     public function create()
     {
-        //
+        return view('assignments.create');
     }
 
     /**

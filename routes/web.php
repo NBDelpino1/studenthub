@@ -12,12 +12,10 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-
-
 Auth::routes();
 
 Route::resource('/records', 'RecordController');
 
-Route::resource('/records', 'AssignmentController');
+Route::resource('/assignments', 'AssignmentController');
 
 Route::get('/home', 'HomeController@index');
