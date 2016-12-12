@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\records;
+use App\Record;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
@@ -15,7 +15,7 @@ class RecordController extends Controller
      */
     public function index()
     {
-        return view('records.index');
+        return view('records.index', ['tasks' => Record::all()]);
     }
 
     /**
@@ -36,7 +36,11 @@ class RecordController extends Controller
      */
     public function store(Request $request)
     {
-//        return response()->redirectTo(route('records.index'));
+        $task = new Record();
+        $task->notes = $request->notes;
+        $task->save();
+        return response()->redirectTo(route('records.index'));
+
     }
 
     /**

@@ -2,19 +2,12 @@
 
 @section('content')
 <div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
-
-                <div class="panel-body">
-                    You are logged in!
-                </div>
-            </div>
-        </div>
+<div class="jumbotron text-center">
+        <h1>Home</h1>
+        <p>You are in home.blade</p>
     </div>
 
-    <p><a class="btn btn-primary btn-lg" href="{{route('records.index')}}" role="button"><span class="glyphicon glyphicon-plus-sign"></span>Attendance</a></p>
+    <p><a class="btn btn-primary btn-lg" href="{{route('records.create')}}" role="button"><span class="glyphicon glyphicon-plus-sign"></span>Attendance</a></p>
 
 </div>
 @endsection
