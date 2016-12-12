@@ -18,4 +18,6 @@ Auth::routes();
 
 Route::resource('/records', 'RecordController');
 
+Route::resource('/records', 'AssignmentController');
+
 Route::get('/home', 'HomeController@index');
